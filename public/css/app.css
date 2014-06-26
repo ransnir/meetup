@@ -1,0 +1,112 @@
+
+.guestElement {
+    border: 1px solid #e5eae9;
+    position: relative;
+    text-decoration: none;
+    float: left;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 0px 10px 0px 10px;
+    -moz-border-radius: 0px 10px 0px 10px;
+    border-radius: 0px 10px 0px 10px;
+    margin: 10px 20px 18px 0px;
+    font-family: "HPSimplifiedLight", "Trebuchet MS", Arial;
+    -webkit-box-shadow: 0px 8px 0px 0px #dedede;
+    -moz-box-shadow: 0px 8px 0px 0px #dedede;
+    box-shadow: 0px 8px 0px 0px #dedede;
+}
+div.deviceOuter {
+    display: table-cell;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    cursor : pointer;
+
+}
+
+div.deviceMiddle {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+
+}
+
+div.selectedGuest {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-timing-function: linear;
+    background-color: #0397D6;
+}
+
+div.selectedGuestOld {
+    background-color: #0397D6;
+}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+    }
+    5%  {
+        -webkit-transform: rotate(15deg);
+    }
+    10%  {
+        -webkit-transform: rotate(-15deg);
+
+    }
+    15%  {
+        -webkit-transform: rotate(15deg);
+    }
+    20%  {
+        -webkit-transform: rotate(-15deg);
+
+    }
+    25%  {
+        -webkit-transform: rotate(15deg);
+    }
+    30%  {
+        -webkit-transform: rotate(0deg);
+        -webkit-transform: scale(1);
+    }
+    45% {
+        -webkit-transform : scale(2);
+    }
+    65%  {
+        -webkit-transform : scale(1);
+        -webkit-transform: rotate(15deg);
+    }
+    70%  {
+        -webkit-transform: rotate(-15deg);
+
+    }
+    75%  {
+        -webkit-transform: rotate(15deg);
+    }
+    80%  {
+        -webkit-transform: rotate(-15deg);
+
+    }
+    90%  {
+        -webkit-transform: rotate(15deg);
+
+    }
+    85%  {
+        -webkit-transform: rotate(0deg);
+
+    }
+}
+
+div.deviceInner {
+    border: 2px solid #00ff00;
+}
+
+
+div.deviceInnerElement {
+    border: 2px solid #000000;
+}
+
+.guestImg {
+    width: 100px;
+    height: 100px;
+}

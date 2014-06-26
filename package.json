@@ -1,0 +1,14 @@
+{
+  "name": "catjs-meetup",
+  "version": "0.0.0",
+  "description": "catjs-meetup",
+  "main": "server.js",
+  "dependencies": {
+    
+  },
+  "devDependencies": {},
+  
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
