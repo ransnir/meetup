@@ -1,0 +1,40 @@
+2014-06-26T11:26:07.664Z - info: [90mGET / [32m200 [90m3ms - 1.1kb[0m
+
+2014-06-26T11:26:07.735Z - info: [90mGET /libs/jquery.js [32m200 [90m4ms - 266.8kb[0m
+
+2014-06-26T11:26:07.750Z - info: [90mGET /libs/jquery.mobile-1.4.0.min.js [32m200 [90m13ms - 188.74kb[0m
+
+2014-06-26T11:26:07.761Z - info: [90mGET /css/jquery.mobile-1.4.0.min.css [32m200 [90m35ms - 216.05kb[0m
+
+2014-06-26T11:26:07.768Z - info: [90mGET /css/app.css [32m200 [90m2ms - 2.17kb[0m
+
+2014-06-26T11:26:07.768Z - info: [90mGET /js/app.js [32m200 [90m2ms - 3.18kb[0m
+
+2014-06-26T11:26:07.793Z - info: [90mGET /images/meetup.png [32m200 [90m2ms - 19.89kb[0m
+
+2014-06-26T11:26:07.875Z - info: [90mGET /css/images/ajax-loader.gif [33m404 [90m1ms[0m
+
+2014-06-26T11:26:07.896Z - info: [90mGET /getMeetup [33m404 [90m1ms[0m
+
+2014-06-26T11:26:07.985Z - info: [90mGET /favicon.ico [33m404 [90m1ms[0m
+
+2014-06-26T11:26:09.655Z - info: [90mGET /libs/jquery.mobile-1.4.0.min.map [33m404 [90m0ms[0m
+
+2014-06-26T11:27:15.358Z - info: [90mGET / [32m200 [90m2ms - 1.1kb[0m
+
+2014-06-26T11:27:15.442Z - info: [90mGET /libs/jquery.js [32m200 [90m24ms - 266.8kb[0m
+
+2014-06-26T11:27:15.444Z - info: [90mGET /css/app.css [32m200 [90m11ms - 2.17kb[0m
+
+2014-06-26T11:27:15.453Z - info: [90mGET /css/jquery.mobile-1.4.0.min.css [32m200 [90m36ms - 216.05kb[0m
+
+2014-06-26T11:27:15.475Z - info: [90mGET /js/app.js [32m200 [90m20ms - 3.22kb[0m
+
+2014-06-26T11:27:15.475Z - info: [90mGET /libs/jquery.mobile-1.4.0.min.js [32m200 [90m23ms - 188.74kb[0m
+
+2014-06-26T11:27:15.479Z - info: [90mGET /images/meetup.png [32m200 [90m2ms - 19.89kb[0m
+
+2014-06-26T11:27:15.574Z - info: [90mGET /css/images/ajax-loader.gif [33m404 [90m1ms[0m
+
+2014-06-26T11:27:15.655Z - info: [90mGET /libs/jquery.mobile-1.4.0.min.map [33m404 [90m1ms[0m
+

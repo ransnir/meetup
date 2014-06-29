@@ -1,0 +1,60 @@
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] INFO 
+
+[CAT] Initial LOG -----------------------------------------------------------------------
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] Initial CAT process: 12840
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] DEBUG [CAT] Initial, current location: C:\Users\snirr\workspace\meetup\cat-project
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] DEBUG [CAT] Initial, command line arguments: {"task":["t@clean","t@init","t@scrap","t@inject","t@server.start"],"argv":{"remain":[],"cooked":["--task","t@clean","--task","t@init","--task","t@scrap","--task","t@inject","--task","t@server.start"],"original":["-cbs"]},"home":{"path":"C:\\Users\\snirr\\workspace\\catjs","working":{"path":"C:\\Users\\snirr\\workspace\\meetup\\cat-project"}}}
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] INFO watch: false kill: -1 process: 12840
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] WARNING [CAT Config] Missing 'dependencies' configuration section
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] WARNING "[utils resolver] the object was partially resolved, check your query: scrapfilter"
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] WARNING "[cat config] No valid configuration, missing 'scrapfilter' entry"
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] WARNING "[utils resolver] the object was partially resolved, check your query: dependencies"
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] WARNING "[cat config] No valid configuration, missing 'dependencies' entry"
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] INFO [base extension] Initialized
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: clean
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: clean
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] INFO [base extension] Initialized
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: copy
+[Thu Jun 26 2014 14:25:13 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: copy
+[Thu Jun 26 2014 14:25:14 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: libraries
+[Thu Jun 26 2014 14:25:14 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: libraries
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: copy
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: copy
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: fileparse
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: fileparse
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: copy
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: copy
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: scrap-common
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: scrap-common
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: scrap-sencha
+[Thu Jun 26 2014 14:25:28 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: scrap-sencha
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: scrap-jqm
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: scrap-jqm
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: scrap-enyo
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: scrap-enyo
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [base extension] Initialized
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: scrap
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: scrap
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: custom-plugin
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: custom-plugin
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] WARNING "[scrap plugin] Closing Scrap block but with no opening sign";
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: scrap-common
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: scrap-common
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: scrap-sencha
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: scrap-sencha
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: scrap-jqm
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: scrap-jqm
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: scrap-enyo
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: scrap-enyo
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [base extension] Initialized
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: inject
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: inject
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] WARNING "[cat mdata] CAT Meta Data file does not exists"
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: minify
+[Thu Jun 26 2014 14:25:29 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: minify
+[Thu Jun 26 2014 14:25:31 GMT+0300 (Jerusalem Daylight Time)] INFO [base extension] Initialized
+[Thu Jun 26 2014 14:25:31 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: webserver
+[Thu Jun 26 2014 14:25:31 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: webserver
+[Thu Jun 26 2014 14:25:31 GMT+0300 (Jerusalem Daylight Time)] INFO [CAT] running target: custom-plugin
+[Thu Jun 26 2014 14:25:31 GMT+0300 (Jerusalem Daylight Time)] DEBUG [Action] Instantiating action: custom-plugin
+[Thu Jun 26 2014 14:25:31 GMT+0300 (Jerusalem Daylight Time)] INFO "[webserver ext] Server started"

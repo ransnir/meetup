@@ -13,14 +13,15 @@ changePages =function(pageId, effect) {
 }
 
 $('#splashPage').ready(function(){
-    $(function() {
-        $.get( "/getMeetup", function( data ) {
-            meetupData = JSON.parse(data);
-            console.log(meetupData);
-            changePages("#home", "fade");
-        });
-
-    });
+    debugger;
+//    $(function() {
+//        $.get( "http://localhost:555/getMeetup", function( data ) {
+//            meetupData = JSON.parse(data);
+//            debugger;
+//            changePages("#home", "fade");
+//        });
+//
+//    });
 });
 
 
@@ -28,7 +29,7 @@ $('#splashPage').ready(function(){
 $('#home').ready(function(){
     $("#showGuests").click(function (e) {
         $(function() {
-            $.get( "/getGuests", function( data ) {
+            $.get( "http://localhost:555/getGuests", function( data ) {
                 meetupGuests = JSON.parse(data);
                 changePages("#guestsPage", "fade");
             });

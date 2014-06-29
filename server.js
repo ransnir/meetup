@@ -42,7 +42,6 @@ app.get('/getGuests', function(req, res) {
     request(getMeetupGuests, function (error, response, body) {
         if (!error && response.statusCode == 200) {
 
-            foreach
             res.send(body);
 
         }
