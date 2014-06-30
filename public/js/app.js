@@ -6,17 +6,26 @@
 var meetupData,
     meetupGuests,
     changePages,
-    guestsList = [];
+    guestsList = [], setPaddingFunction;
 
+setPaddingFunction = function () {
+        $('#guestList').css({'padding' : '0px'});
+      setPadding = $('#guestList').width() % ($('#guestList .guestElement').width() + 6);
+        $('#guestList').css({'padding' : '0px ' + (setPadding / 2) + 'px'});
+
+};
 changePages =function(pageId, effect) {
     $.mobile.changePage(pageId, effect);
-}
+};
 
 $('#splashPage').ready(function(){
     $(function() {
         $.get( "/getMeetup", function( data ) {
-            meetupData = JSON.parse(data);
-            console.log(meetupData);
+            if (typeof data == 'string' || data instanceof String) {
+                meetupData = JSON.parse(data);
+            } else {
+                meetupData = (data);
+            }
             changePages("#home", "fade");
         });
 
@@ -29,7 +38,13 @@ $('#home').ready(function(){
     $("#showGuests").click(function (e) {
         $(function() {
             $.get( "/getGuests", function( data ) {
-                meetupGuests = JSON.parse(data);
+
+                if (typeof data == 'string' || data instanceof String) {
+                    meetupGuests = JSON.parse(data);
+                } else {
+                    meetupGuests = (data);
+                }
+
                 changePages("#guestsPage", "fade");
             });
 
@@ -81,7 +96,8 @@ $(document).on("pageshow","#home",function(){
 });
 
 $(document).on("pageshow","#guestsPage",function(){
-    var guestsPage = $('#guestList');
+    var guestsPage = $('#guestList'),
+        newBoxSize, setPadding;
 
     $.each(meetupGuests.results, function(i)
     {
@@ -89,7 +105,7 @@ $(document).on("pageshow","#guestsPage",function(){
                             meetupGuests.results[i].member_photo.thumb_link : "images/avatar.jpg";
         var petek =
             "<div class='guestElement'>" +
-                "<div class='guestOuter'>" +
+                /*"<div class='guestOuter'>" +*/
                     "<div class='guestMiddle'>" +
                         "<div class='guestInner'>" +
                             "<div class='guestInnerElement'>" +
@@ -97,18 +113,60 @@ $(document).on("pageshow","#guestsPage",function(){
                                 imageSrc +
                                 "'>" +
                             "</div>" +
-                            "<div class='guestInnerElement'>" +
-                                "<span class='guestName'>" +
+                            "<div class='guestInnerElement guestName'>" +
+                                
                                     meetupGuests.results[i].member.name +
-                                "</span>" +
+                                
                             "</div>" +
                         "</div>" +
                     "</div>" +
-                "</div>" +
-            "</div>";
+                /*"</div>" +*/
 
-        guestsPage.append(petek);
+            "</div>";
+        if (meetupGuests.results[i].member_photo && meetupGuests.results[i].member_photo.thumb_link) {
+            guestsPage.prepend(petek);
+        } else {
+            guestsPage.append(petek);
+        }
+
+
+       
+        
     });
 
+
+    
+
     guestsList = $(".guestElement");
+
+    if (($('#guestList').width() - ($('#guestList').width() % $('#guestList .guestElement').width())) / $('#guestList .guestElement').width()  < 4) { 
+        newBoxSize = $('#guestList').width() / 4;
+        console.log(newBoxSize);
+        $('.guestElement').width(newBoxSize).height(newBoxSize);
+        $('.guestImg').width(newBoxSize).height(newBoxSize);
+        $('.guestName').css({ 'font-size': '10px' });
+
+    }
+
+
+     setPaddingFunction();
+});
+
+
+$( window ).resize(function() {
+    // setTimeout(function(){
+setPaddingFunction();
+        if (($('#guestList').width() - ($('#guestList').width() % $('#guestList .guestElement').width())) / $('#guestList .guestElement').width()  < 4) { 
+            newBoxSize = $('#guestList').width() / 4;
+            console.log(newBoxSize);
+            $('.guestElement').width(newBoxSize).height(newBoxSize);
+            $('.guestImg').width(newBoxSize).height(newBoxSize);
+            $('.guestName').css({ 'font-size': '10px' });
+
+
+        }
+    // }, 500);
+    
+
+
 });
