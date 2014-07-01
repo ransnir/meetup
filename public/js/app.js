@@ -6,6 +6,7 @@
 var meetupData,
     meetupGuests,
     changePages,
+    serverAddress = "http://192.168.137.21:555",
     guestsList = [], setPaddingFunction;
 
 setPaddingFunction = function () {
@@ -20,7 +21,7 @@ changePages =function(pageId, effect) {
 
 $('#splashPage').ready(function(){
     $(function() {
-        $.get( "/getMeetup", function( data ) {
+        $.get( serverAddress + "/getMeetup", function( data ) {
             if (typeof data == 'string' || data instanceof String) {
                 meetupData = JSON.parse(data);
             } else {
@@ -37,7 +38,7 @@ $('#splashPage').ready(function(){
 $('#home').ready(function(){
     $("#showGuests").click(function (e) {
         $(function() {
-            $.get( "/getGuests", function( data ) {
+            $.get( serverAddress + "/getGuests", function( data ) {
 
                 if (typeof data == 'string' || data instanceof String) {
                     meetupGuests = JSON.parse(data);

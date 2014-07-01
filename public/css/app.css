@@ -71,9 +71,8 @@ div.selectedGuestOld:after {
     top: 0;
     left: 0;
     position: absolute;
-    z-index: 1;
     content: "";
-     background-color: #0397D6;
+    background-color: #0397D6;
     opacity: .4;
 }
 
@@ -100,7 +99,7 @@ div.selectedGuest {
     -webkit-animation-duration: 2000ms;
     -webkit-animation-timing-function: linear;
     background-color: #0397D6;
-    z-index: 1;
+    
 }
 
 div.selectedGuestOld {
@@ -109,6 +108,7 @@ div.selectedGuestOld {
 
 @-webkit-keyframes spin {
     0%   {
+        z-index: 1;
         -webkit-transform: rotate(0deg);
     }
     5%  {
@@ -157,6 +157,13 @@ div.selectedGuestOld {
     85%  {
         -webkit-transform: rotate(0deg);
 
+
+    }
+    99% {
+        z-index: 1;
+    }
+    100% {
+        z-index: 0;
     }
 }
 
